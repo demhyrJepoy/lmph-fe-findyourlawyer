@@ -1,0 +1,7 @@
+.text-lm-blue {
+    color: #222f64;
+}
+
+.custom-links > .list-inline-item:not(:last-child){
+    margin-right: 4em !important;
+}
