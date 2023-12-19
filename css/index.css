@@ -2,6 +2,11 @@
     color: #222f64;
 }
 
+.btn-lm-blue, .btn-lm-blue:hover {
+    color: white;
+    background-color: #222f64;
+}
+
 .custom-links > .list-inline-item:not(:last-child){
     margin-right: 4em !important;
 }
