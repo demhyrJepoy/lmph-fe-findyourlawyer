@@ -46,33 +46,47 @@
                         <strong class="fs-2">Fast, Free and Confidential</strong>
                     </p>
                     <div class="w-75 mt-5">
-                        <label for="zipCodeCity" class="form-label fs-5">Enter Zip Code or City:</label>
-                        <input class="form-control" list="zipCodeDataList" id="zipCodeCity"
-                            placeholder="Does not have to be where you live">
-                        <datalist id="zipCodeDataList">
-                            <option>Nowheresville, XX 00000</option>
-                            <option>Morris, IL 60450</option>
-                        </datalist>
+                        <label for="zipCodeCity" class="form-label fs-5">
+                            <strong>Enter Zip Code or City:</strong>
+                        </label>
+                        <div class="p-3 rounded-5 bg-white d-flex flex-row">
+                            <div class="fs-3 rounded-5 px-3 me-2 " style="background-color: gold;">1</div>
+                            <div class="flex-grow-1">
+                                <input class="form-control border-0" list="zipCodeDataList" id="zipCodeCity"
+                                    placeholder="Does not have to be where you live">
+                                <datalist id="zipCodeDataList">
+                                    <option>Nowheresville, XX 00000</option>
+                                    <option>Morris, IL 60450</option>
+                                </datalist>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="w-75 mt-5">
-                        <label for="category" class="form-label fs-5">Choose a category:</label>
-                        <input class="form-control" list="categoryDataList" id="category"
-                            placeholder="Click to choose a legal category">
-                        <datalist id="categoryDataList">
-                            <option>Family</option>
-                            <option>Criminal Defense</option>
-                            <option>Business</option>
-                            <option>Personal Injury</option>
-                            <option>Bankruptcy & Finances</option>
-                            <option>Products & Services</option>
-                            <option>Employment</option>
-                            <option>Real Estate</option>
-                            <option>Immigration</option>
-                            <option>Wills, Trusts & Estates</option>
-                            <option>Government</option>
-                            <option>Intellectual Property</option>
-                        </datalist>
+                        <label for="category" class="form-label fs-5">
+                            <strong>Choose a category:</strong>
+                        </label>
+                        <div class="p-3 rounded-5 bg-white d-flex flex-row">
+                            <div class="fs-3 rounded-5 px-3 me-2 " style="background-color: gold;">2</div>
+                            <div class="flex-grow-1">
+                                <input class="form-control border-0" list="categoryDataList" id="category"
+                                    placeholder="Click to choose a legal category">
+                                <datalist id="categoryDataList">
+                                    <option>Family</option>
+                                    <option>Criminal Defense</option>
+                                    <option>Business</option>
+                                    <option>Personal Injury</option>
+                                    <option>Bankruptcy & Finances</option>
+                                    <option>Products & Services</option>
+                                    <option>Employment</option>
+                                    <option>Real Estate</option>
+                                    <option>Immigration</option>
+                                    <option>Wills, Trusts & Estates</option>
+                                    <option>Government</option>
+                                    <option>Intellectual Property</option>
+                                </datalist>
+                            </div>
+                        </div>
                     </div>
                     <div class="w-75 mt-3">
                         <p class="fs-5 text-center">
@@ -170,10 +184,8 @@
                                 </small>
                             </h5>
                             <p>
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis
-                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                pariatur
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum
                             </p>
                             <a href="#" class="reviewLink float-end">Read Review <i class="bi-book fs-6 ms-1"></i></a>
                         </aside>
@@ -183,6 +195,7 @@
                 </div>
 
             </div>
+
         </section>
 
         <!--Footer-->
@@ -217,8 +230,8 @@
 
           
         <!-- Modal -->
-        <div class="modal fade show" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="false">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="false">
             <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -226,11 +239,9 @@
                         <button type="button" class="btn-close" data-bs-dismiss="revEngrModal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        ...
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="revEngrModal">Close</button>
-                        <button type="button" class="btn btn-primary">Okay</button>
                     </div>
                 </div>
             </div>
