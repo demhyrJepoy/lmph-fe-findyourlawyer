@@ -5,3 +5,34 @@
 .custom-links > .list-inline-item:not(:last-child){
     margin-right: 4em !important;
 }
+
+.custom-links a {
+    text-decoration-line: none;
+    color: rgba(var(--bs-secondary-rgb),var(--bs-text-opacity))!important;
+}
+
+#clickHereLink {
+    text-decoration-style: dotted;
+    color: #ffffff;
+}
+
+a.reviewLink {
+    text-decoration-line: none;
+    color: gold;
+}
+
+p { 
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+i.bi-star-fill, i.bi-star-half, i.bi-star {
+    color: gold;
+}
+
+body.modal-open {
+    overflow: hidden;
+    padding-right: 15px;
+}

@@ -2,68 +2,247 @@
 
 <html lang="en">
 
-    <head>
-        <title>LMPH - Find Your Lawyer</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>LMPH - Find Your Lawyer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="./css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="./css/bootstrap-icons.min.css"/>
-        <link rel="stylesheet" href="./css/index.css"/>
-    </head>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
 
-    <body>
-        <main>
-            <!--Header-->
-            <header class="container-fluid">
-                <nav class="navbar offset-1 col-9">
-                    <h4 class="my-0">
-                        <img src="./images/lm.svg" alt="LegalMatch" width="300" height="52">
-                        <strong class="text-lm-blue">FIND THE RIGHT LAWYER NOW</strong>
-                    </h4>
-                    <ul class="list-unstyled me-5 mb-0">
-                        <li>
-                            <i class="bi-check fs-5" style="color:green"></i><strong>No fee to present your case</strong>
-                        </li>
-                        <li>
-                            <i class="bi-check fs-5" style="color:green"></i><strong>Choose from lawyers in your area</strong>
-                        </li>
-                        <li>
-                            <i class="bi-check fs-5" style="color:green"></i><strong>A 100% confidential service</strong>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+<body>
+    <main>
+        <!--Header-->
+        <header class="container-fluid">
+            <nav class="navbar offset-1 col-10">
+                <h4 class="my-0">
+                    <img src="./images/lm.svg" alt="LegalMatch" width="300" height="52">
+                    <strong class="text-lm-blue">FIND THE RIGHT LAWYER NOW</strong>
+                </h4>
+                <ul class="list-unstyled me-5 mb-0">
+                    <li>
+                        <i class="bi-check fs-5" style="color:green"></i><strong>No fee to present your case</strong>
+                    </li>
+                    <li>
+                        <i class="bi-check fs-5" style="color:green"></i><strong>Choose from lawyers in your
+                            area</strong>
+                    </li>
+                    <li>
+                        <i class="bi-check fs-5" style="color:green"></i><strong>A 100% confidential service</strong>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-            <!--Footer-->
-            <footer class="container-fluid">
-                <div class="offset-1 col-9 row mt-3">
-                    <section class="col-3">
-                        <img src="./images/lm.svg" alt="LegalMatch logo" width="180" height="52"/>
-                        <p><strong class="text-lm-blue">FIND THE RIGHT LAWYER NOW</strong></p>
-                    </section>
-                    <section class="col d-flex flex-column">
+        <!-- Content -->
+        <section class="container-fluid text-white pb-5 pt-3" style="background-color: #0000A0;">
+            <div class="offset-1 col-10 row">
+                <!-- Left Side -->
+                <div class="col-7">
+                    <p>
+                        <span class="fs-1">Find a Lawyer for your legal issue</span><br />
+                        <strong class="fs-2">Fast, Free and Confidential</strong>
+                    </p>
+                    <div class="w-75 mt-5">
+                        <label for="zipCodeCity" class="form-label fs-5">Enter Zip Code or City:</label>
+                        <input class="form-control" list="zipCodeDataList" id="zipCodeCity"
+                            placeholder="Does not have to be where you live">
+                        <datalist id="zipCodeDataList">
+                            <option>Nowheresville, XX 00000</option>
+                            <option>Morris, IL 60450</option>
+                        </datalist>
+                    </div>
+
+                    <div class="w-75 mt-5">
+                        <label for="category" class="form-label fs-5">Choose a category:</label>
+                        <input class="form-control" list="categoryDataList" id="category"
+                            placeholder="Click to choose a legal category">
+                        <datalist id="categoryDataList">
+                            <option>Family</option>
+                            <option>Criminal Defense</option>
+                            <option>Business</option>
+                            <option>Personal Injury</option>
+                            <option>Bankruptcy & Finances</option>
+                            <option>Products & Services</option>
+                            <option>Employment</option>
+                            <option>Real Estate</option>
+                            <option>Immigration</option>
+                            <option>Wills, Trusts & Estates</option>
+                            <option>Government</option>
+                            <option>Intellectual Property</option>
+                        </datalist>
+                    </div>
+                    <div class="w-75 mt-3">
+                        <p class="fs-5 text-center">
+                            <strong>Can't find your category?
+                                <a href="#" id="clickHereLink">Click here.</a>
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="col">
+                    <h3 class="mt-5 mb-5">Clients review LegalMatch lawyers</h3>
+                    <!-- Card 1 -->
+                    <div class="d-flex flex-row">
+                        <aside class="me-5 text-center flex-grow-1">
+                            <i class="bi-person-circle fs-3"></i>
+                            <span class="d-block">
+                                <strong>Mitchell M.</strong><br />
+                                Cherryhill, NJ
+                            </span>
+                        </aside>
+                        <aside class="w-75">
+                            <h5>
+                                Family Law
+                                <small class="ms-4">
+                                    <i class="bi-star-fill"></i>
+                                    <i class="bi-star-fill"></i>
+                                    <i class="bi-star-fill"></i>
+                                    <i class="bi-star-fill"></i>
+                                    <i class="bi-star-half"></i>
+                                </small>
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna
+                                aliqua.
+                            </p>
+                            <a href="#" class="reviewLink float-end">Read Review <i class="bi-book fs-6 ms-1"></i></a>
+                        </aside>
+                    </div>
+
+                    <hr />
+
+                    <!-- Card 2 -->
+                    <div class="d-flex flex-row">
+                        <aside class="me-5 text-center flex-grow-1">
+                            <i class="bi-person-circle fs-3"></i>
+                            <span class="d-block">
+                                <strong>Joel C.</strong><br />
+                                Little Rock, AK
+                            </span>
+                        </aside>
+                        <aside class="w-75">
+                            <h5>
+                                Job & Employment Law
+                                <small class="ms-4">
+                                    <i class="bi-star-fill"></i>
+                                    <i class="bi-star-fill"></i>
+                                    <i class="bi-star-fill"></i>
+                                    <i class="bi-star-h"></i>
+                                    <i class="bi-star"></i>
+                                </small>
+                            </h5>
+                            <p>
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur
+                            </p>
+                            <a href="#" class="reviewLink float-end">Read Review <i class="bi-book fs-6 ms-1"></i></a>
+                        </aside>
+                    </div>
+
+                    <hr />
+
+                    <!-- Card 3 -->
+                    <div class="d-flex flex-row">
+                        <aside class="me-5 text-center flex-grow-1">
+                            <i class="bi-person-circle fs-3"></i>
+                            <span class="d-block">
+                                <strong>Brigida R.</strong><br />
+                                Dallas, TX
+                            </span>
+                        </aside>
+                        <aside class="w-75">
+                            <h5>
+                                Real Estate Law
+                                <small class="ms-4">
+                                    <i class="bi-star-fill"></i>
+                                    <i class="bi-star-fill"></i>
+                                    <i class="bi-star-fill"></i>
+                                    <i class="bi-star-fill"></i>
+                                    <i class="bi-star-fill"></i>
+                                </small>
+                            </h5>
+                            <p>
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur
+                            </p>
+                            <a href="#" class="reviewLink float-end">Read Review <i class="bi-book fs-6 ms-1"></i></a>
+                        </aside>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer class="container-fluid">
+            <div class="offset-1 col-10 row mt-3">
+                <section class="col-3">
+                    <img src="./images/lm.svg" alt="LegalMatch logo" width="180" height="52" />
+                    <p><strong class="text-lm-blue">FIND THE RIGHT LAWYER NOW</strong></p>
+                </section>
+                <section class="col d-flex flex-column text-secondary">
                     <div class="mt-4">
                         <ul class="list-inline custom-links text-center">
-                            <li class="list-inline-item">Legal</li>
+                            <li class="list-inline-item"><a href="#">User Agreement</a></li>
                             <li class="list-inline-item">&#9632;</li>
-                            <li class="list-inline-item">Privacy Policy</li>
+                            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
                             <li class="list-inline-item">&#9632;</li>
-                            <li class="list-inline-item">Sitemap</li>
+                            <li class="list-inline-item"><a href="#">Sitemap</a></li>
                         </ul>
                     </div>
                     <div class="mt-auto">
-                        <p class="text-center">Copyright 1996-2016 LegalMatch. All rights reserved. LegalMatch&copy;,<br/>
-                        the LegalMatch logo, and the tradedress are trademarks of LegalMatch. Patents Pending.</p>
-                    </div>    
-                    </section>
-                    <section class="col-3 text-center">
-                        <img src="./images/truste_logo.jpg" alt="TrustE logo" width="200"/>
-                        <img src="./images/bbb.png" alt="BBB logo" width="200"/>
-                    </section>
+                        <p class="text-center">Copyright 1996-2016 LegalMatch. All rights reserved.
+                            LegalMatch&copy;,<br />
+                            the LegalMatch logo, and the tradedress are trademarks of LegalMatch. Patents Pending.</p>
+                    </div>
+                </section>
+                <section class="col-3 text-center">
+                    <img src="./images/truste_logo.jpg" alt="TrustE logo" width="200" />
+                    <img src="./images/bbb.png" alt="BBB logo" width="200" />
+                </section>
+            </div>
+        </footer>
+
+          
+        <!-- Modal -->
+        <div class="modal fade show" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="false">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="revEngrModal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="revEngrModal">Close</button>
+                        <button type="button" class="btn btn-primary">Okay</button>
+                    </div>
                 </div>
-            </footer>
-        </main>
-    </body>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal-backdrop fade d-none" id="modalBackdrop"></div>
+
+    <script src="./js/index.js"></script>
+    <script type="text/javascript">
+        window.addEventListener("load", app().loadEvent());
+    </script>
+</body>
 
 </html>
